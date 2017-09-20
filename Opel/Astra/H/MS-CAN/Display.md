@@ -20,6 +20,10 @@ Period: =< 3ms (between frames; packets are sent at display content change or fr
 
 2-bytes: display command and / or addressing. TODO: write here what has been found
 
+0x4000 / 0xC000: maybe related to the time it stays on the screen as well ??
+
+0x5000: used to change / address status labels (e.g. RDS, TP, REG...)
+
 1-byte: length of the display packet i.e. the data that comes after.
 
 1-byte: 0x03 ? changing it seems not affecting the functionality? needs testing. datatype is a good assumption, check.
