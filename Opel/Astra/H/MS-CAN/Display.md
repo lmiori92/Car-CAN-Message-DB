@@ -22,7 +22,7 @@ Period: =< 3ms (between frames; packets are sent at display content change or fr
 
 0x4000 / 0xC000: maybe related to the time it stays on the screen as well ??
 
-0x5000: used to change / address status labels (e.g. RDS, TP, REG...)
+0x5000: used to change / address status labels (e.g. RDS, TP, REG...). Interestingly pressing the buttons to change the label status generates single frame messages of 6 or 7 bytes and there seems not to be an obvious indexing. Is this perhaps enabling some sort of direct drawing? To be explored :-)
 
 1-byte: length of the display packet i.e. the data that comes after.
 
