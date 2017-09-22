@@ -26,7 +26,7 @@ Period: =< 3ms (between frames; packets are sent at display content change or fr
 
 1-byte: length of the display packet i.e. the data that comes after.
 
-1-byte: 0x03 ? changing it seems not affecting the functionality? needs testing. datatype is a good assumption, check.
+1-byte: 0x03 ? changing it seems not affecting the functionality. It seems not related to a string type since it is also present in "icon" messages...Perhaps some addressing that the display gently ignores? Maybe related to ISO 15765-2
 
 1-byte: string type / position / address ?
 
